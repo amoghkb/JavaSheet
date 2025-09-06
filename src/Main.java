@@ -1,19 +1,50 @@
+
+
 class Main{
 
-    public int getNum() {
-        return num;
+    public static void main(String[] args) {
+
+
     }
-
-    public void setNum(int num) {
-        this.num = num;
-    }
-
-    int num;
-
-    public Main(int num) {
-        this.num = num;
     }
 
 
+    interface  amogh{
 
-}
+
+    default  void somename(){
+        System.out.println("Somename");
+    }
+    default  void some(){
+
+    }
+    void amoghlifestyle();
+
+    void amoghmoney();
+
+    }
+
+    interface  ashi{
+
+    void ashilifesyle();
+
+    }
+
+    class parents implements  amogh,ashi{
+
+
+        @Override
+        public void amoghlifestyle() {
+            System.out.println("it is your choice amogh");
+        }
+
+        @Override
+        public void amoghmoney() {
+            System.out.println("you have to report to father");
+        }
+
+        @Override
+        public void ashilifesyle() {
+            System.out.println("you have to report to husband");
+        }
+    }
