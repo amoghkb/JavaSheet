@@ -1,3 +1,4 @@
+/*
 package OOPs; // InheritanceConcepts.java
 // A single program showing all types & concepts of Inheritance in Java
 // Using different examples (Company, Devices, Gadgets, etc.)
@@ -124,9 +125,11 @@ final class FinalUtility {
     }
 }
 
+*/
 /*
 class ExtendedUtility extends FinalUtility { } // ❌ ERROR: cannot inherit final class
-*/
+*//*
+
 
 class BaseWithFinalMethod {
     final void showPolicy() {
@@ -191,6 +194,7 @@ public class InheritanceDemo {
     }
 }
 
+*/
 /*
 ================== EXPLANATION OF INHERITANCE TYPES ==================
 
@@ -240,3 +244,4 @@ public class InheritanceDemo {
 
 ====================================================
 */
+

@@ -1,50 +1,37 @@
+import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+class Main {
 
 
-class Main{
-
-    public static void main(String[] args) {
 
 
+
+
+    public static void main(String[] args) throws Exception {
+
+
+
+Voter v=new Voter();
+
+try{
+    v.ageCheck(12);
+}catch (Exception e){
+    System.out.println(e);
+}
     }
-    }
+}
 
 
-    interface  amogh{
-
-
-    default  void somename(){
-        System.out.println("Somename");
-    }
-    default  void some(){
-
-    }
-    void amoghlifestyle();
-
-    void amoghmoney();
-
-    }
-
-    interface  ashi{
-
-    void ashilifesyle();
-
-    }
-
-    class parents implements  amogh,ashi{
-
-
-        @Override
-        public void amoghlifestyle() {
-            System.out.println("it is your choice amogh");
-        }
-
-        @Override
-        public void amoghmoney() {
-            System.out.println("you have to report to father");
-        }
-
-        @Override
-        public void ashilifesyle() {
-            System.out.println("you have to report to husband");
+class  Voter{
+    void ageCheck(int age) throws  Exception{
+        if(age>18){
+            System.out.println("valied to vote");
+        }else{
+            throw new Exception("the person should be !8+");
         }
     }
+
+}
